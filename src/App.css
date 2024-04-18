@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  color: #121a0d;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+  max-width: 100%;
+  margin-top: 10px;
+} 
+main {
+  padding: 10px;
+  max-width: 700px;
+  margin: 0 auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
   display: flex;
-  flex-direction: column;
+  margin-top: 20px;
+  justify-content: space-between;
+  margin-bottom: 45px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+header a.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+header nav {
+  display: flex;
+  gap: 15px;
+}
+div.post {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+div.post div.texts h2 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+div.post p.info {
+  margin: 5px 0;
+  color: #a7a5a5;
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+}
+div.post p.info a.author {
+  color: black;
+}
+div.post p.summary {
+  margin: 8px 0;
+  line-height: 1.4rem;
+}
+form.login,
+form.register {
+  max-width: 500px;
+  margin: 0 auto;
+}
+input {
+  display: block;
+  margin-bottom: 6px;
+  width: 100%;
+  padding: 7px 7px;
+  border: 2px solid gainsboro;
+  background-color: white;
+  border-radius: 6px;
+}
+button {
+  width: 100%;
+  padding: 7px;
+  background-color: #121a0d;
   color: white;
+  border: 0;
+  border-radius: 6px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form h1 {
+  text-align: center;
 }
